@@ -1,4 +1,4 @@
-Pipeline{
+pipeline{
 
 agent any
   
@@ -15,7 +15,7 @@ agent any
    { steps
       { sh 'echo Executing unit test cases' }
    }
-  stage(Building code){
+  stage('Building code){
     steps{sh 'echo building code'}
   }
   
